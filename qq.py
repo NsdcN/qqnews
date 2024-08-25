@@ -58,7 +58,7 @@ def patch_fix_image_links(text, output_dir, title):
             year = time.strftime('%Y')
             month = time.strftime('%m')
             day = time.strftime('%d')
-            relative_path = f"https://raw.githubusercontent.com/NsdcN/QQ_News_Images/{year}/{month}/{day}/{title}/{downloaded_filename}"
+            relative_path = f"https://raw.githubusercontent.com/NsdcN/QQ_News_Images/main/{year}/{month}/{day}/{title}/{downloaded_filename}"
             text = text.replace(fixed_img_link, f"![{downloaded_filename}]({relative_path})")
 
     # 修复链接和文本显示在同行上的问题
