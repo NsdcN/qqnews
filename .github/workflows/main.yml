@@ -31,9 +31,9 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --local user.email "378600950@qq.com"
-          git config --local user.name "qqhsx"
-          git remote set-url origin https://${{ github.actor }}:${{ secrets.QQNEWS_TOKEN }}@github.com/${{ github.repository }}
+          git config --local user.email "liusheng_@hotmail.com"
+          git config --local user.name ${{ github.actor }}
+          git remote set-url origin git@github.com:<username>/<repo>.git
           git pull --rebase
 
       - name: Install dependencies
@@ -54,8 +54,8 @@ jobs:
       - name: Push images to qqnews_image repository
         run: |
           cd qqnews_image
-          git config --local user.email "378600950@qq.com"
-          git config --local user.name "qqhsx"
+          git config --local user.email "liusheng_@hotmail.com"
+          git config --local user.name ${{ github.actor }}
           git add .
           git commit --allow-empty -m "Add images"
           git push
