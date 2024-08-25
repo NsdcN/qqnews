@@ -84,6 +84,8 @@ def generate_index_page(root_dir):
         f.write("</body>\n")
         f.write("</html>\n")
 
+
 if __name__ == '__main__':
     root_dir = os.path.dirname(os.path.abspath(__file__))  # This should be changed to the path of your aa repository
     generate_index_page(root_dir)
+
