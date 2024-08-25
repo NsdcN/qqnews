@@ -55,7 +55,7 @@ jobs:
       - name: Push images to qqnews_image repository
         run: |
           cd qqnews_image
-          git remote set-url origin https://${{ secrets.QQNEWS_IMAGE_TOKEN }}@github.com/${{ github.actor }}/QQ_News_Images.git
+          # git remote set-url origin https://${{ secrets.QQNEWS_IMAGE_TOKEN }}@github.com/${{ github.actor }}/QQ_News_Images.git
           git add .
           git commit --allow-empty -m "Add images"
           git push
