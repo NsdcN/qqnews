@@ -56,7 +56,7 @@ jobs:
         run: |
           cd qqnews_image
           ls -al .
-          git config --global user.email
+          git config --global user.name
           git branch
           git log
           git pull
