@@ -33,7 +33,7 @@ jobs:
         run: |
           git config --local user.email "liusheng_@hotmail.com"
           git config --local user.name ${{ github.actor }}
-          git remote set-url origin https://<token>@github.com/${{ github.actor }}/qqnews.git
+          git remote set-url origin https://${{ secrets.QQNEWS_IMAGE_TOKEN }}@github.com/${{ github.actor }}/qqnews.git
 
           git pull --rebase
 
