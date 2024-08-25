@@ -31,7 +31,7 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.email ${{ secrets.github_email }}
+          git config --global user.email ${{ secrets.EMAIL }}
           git config --global user.name ${{ github.actor }}
           git remote set-url origin https://${{ secrets.QQNEWS_IMAGE_TOKEN }}@github.com/${{ github.actor }}/qqnews.git
 
