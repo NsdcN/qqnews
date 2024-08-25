@@ -132,5 +132,6 @@ def main():
 
     print(f"Total time taken: {time.time() - starttime} seconds")
 
+
 if __name__ == '__main__':
     main()
