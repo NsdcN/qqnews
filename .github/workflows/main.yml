@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
-          repository: nsdcn/QQ_News_Images
+          repository: ${{ github.actor }}/QQ_News_Images
           token: ${{ secrets.QQNEWS_IMAGE_TOKEN }}
           path: ./qqnews_image
 
