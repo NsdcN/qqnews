@@ -17,10 +17,10 @@ jobs:
           fetch-depth: 1
         
       - name: Checkout qqnews_image repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 1
-          repository: qqhsx/qqnews_image
+          repository: nsdcn/QQ_News_Image
           token: ${{ secrets.QQNEWS_IMAGE_TOKEN }}
           path: ./qqnews_image
 
