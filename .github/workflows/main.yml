@@ -54,14 +54,9 @@ jobs:
 
       - name: Push images to qqnews_image repository
         run: |
-          ls -al .
           cd QQ_News_Images
 
           ls -al .
-          git config --global user.name
-          git branch
-          git log
-          git pull
           git remote -v
           # git remote set-url origin https://${{ secrets.QQNEWS_IMAGE_TOKEN }}@github.com/${{ github.actor }}/QQ_News_Images.git
           git add .
