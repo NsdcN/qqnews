@@ -22,7 +22,7 @@ jobs:
           fetch-depth: 1
           repository: ${{ github.actor }}/QQ_News_Images
           token: ${{ secrets.QQNEWS_IMAGE_TOKEN }}
-          path: ./qqnews_image
+          path: ./QQ_News_Images
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -55,7 +55,7 @@ jobs:
       - name: Push images to qqnews_image repository
         run: |
           ls -al .
-          cd qqnews_image
+          cd QQ_News_Images
 
           ls -al .
           git config --global user.name
