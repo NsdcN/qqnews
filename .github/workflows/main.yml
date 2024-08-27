@@ -54,7 +54,9 @@ jobs:
 
       - name: Push images to qqnews_image repository
         run: |
+          ls -al .
           cd qqnews_image
+
           ls -al .
           git config --global user.name
           git branch
